@@ -74,7 +74,7 @@ def player_choice_menu():
 def print_blank_line():
     print("+" + "".center(51, '-') + "+")         
 
-def print_who_wins(player, machine, OPTIONS):
+def print_who_wins(player, machine):
     print_blank_line()
     if player == machine:
         print("|" + "It's a TIE!!!!!".center(51) + "|")
@@ -82,15 +82,19 @@ def print_who_wins(player, machine, OPTIONS):
         print("|" + "YOU LOSE!!!!".center(51) + "|")
     elif player - machine == 1:
         print("|" + "YOU WIN!!!".center(51) + "|")
+    elif player - machine == 2:
+        print("|" + "YOU LOSE!!!".center(51) + "|")        
     else:
-        print("|" + "YOU LOSE!!!".center(51) + "|")
+        print("|" + "YOU WIN!!!".center(51) + "|")
     print_blank_line()
 
 if __name__ == "__main__":
 
+    clear_screen()
+
     options = [ROCK, PAPER, SCISSORS]
     player_choice = player_choice_menu()
-    machine_choice = random.choice(range(3))
+    machine_choice = random.randint(0,2)
 
     clear_screen()
 
@@ -98,5 +102,5 @@ if __name__ == "__main__":
 
     print_two_hands(options[player_choice], options[machine_choice])
 
-    print_who_wins(player_choice, machine_choice, OPTIONS)
+    print_who_wins(player_choice, machine_choice)
               
