@@ -80,8 +80,6 @@ def print_blank_line(*args):
     else:    
         print("+" + "".center(51, '-') + "+") 
 
-
-
 def print_who_wins(player, machine):
     print_blank_line('═')
     if player == machine:
