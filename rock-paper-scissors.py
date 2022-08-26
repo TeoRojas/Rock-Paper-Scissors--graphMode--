@@ -39,11 +39,11 @@ def print_two_hands(left_hand, right_hand):
         print((left_hand[l] + "|" + right_hand[l][::-1].replace(')','(')).center(53))
 
 def print_game_menu(player_choice, machine_choice):   
-    print("+" + "".center(51, '-') + "+")
+    print_blank_line()
     print("|" + "YOU CHOSE:".center(25) + "|" + "THE MACHINE CHOSE:".center(25) + "|")
     print("|" + "vs".center(51) + "|")
     print("|" + OPTIONS[player_choice].center(25) + "|" + OPTIONS[machine_choice].center(25) + "|")
-    print("+" + "".center(51, '-') + "+")
+    print_blank_line()
 
 def clear_screen():
     if platform.system() == 'Windows':
@@ -52,7 +52,10 @@ def clear_screen():
         os.system('clear')  
 
 def player_choice_menu():
-    print (("This is a ROCK-PAPER-SCISSORS GAME,\n ¿¿¿Could you beat the machine???").center(53))
+    print_blank_line()
+    print("|" + "This is a ROCK-PAPER-SCISSORS GAME,".center(51) + "|")
+    print("|" + "¿¿¿Could you beat the machine???".center(51) + "|")
+    print_blank_line()
 
     player_choice = 0
     
@@ -61,7 +64,7 @@ def player_choice_menu():
         INSERT your choice:
         #1 for Rock
         #2 for Paper
-        #3 for Scissors
+        #3 for Scissors\n
         """))
 
         if player_choice != 1 and player_choice != 2 and player_choice != 3:
