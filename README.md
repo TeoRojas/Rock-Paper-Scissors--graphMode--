@@ -13,10 +13,10 @@ The key to solving this has been the following two items:
 2.- The second self-imposed challenge has been to solve the game of rock, paper, scissors in a numerical way, taking into account the following example:
 
 ```mermaid
-flowchart LR;
-    Rock(Round edge) --> Scissors(Round edge);
-    Scissors(Round edge) --> Paper(Round edge);
-    Paper(Round edge) --> Rock(Round edge);
+graph LR;
+    Rock --> Scissors;
+    Scissors --> Paper;
+    Paper --> Rock;
 ```
 
 ## Usage
