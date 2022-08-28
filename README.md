@@ -6,17 +6,19 @@ To compete with the machine, you will have to enter your selection by keyboard, 
 
 ## Chalenges
 
-The first challenge was to draw the hands facing each other with their corresponding selection (rock, paper, scissors), right on the same line, and to achieve an effect in which the hand on the left has the palm facing upwards, and the hand on the right has the palm facing downwards.
+The first challenge is to draw the hands facing each other with their corresponding selection (rock, paper, scissors), right on the same line, and to achieve an effect in which the hand on the left has the palm facing upwards, and the hand on the right has the palm facing downwards.
+
+![Image text](https://github.com/TeoRojas/Rock-Paper-Scissors--graphMode--/blob/main/img/vs-hands.png)
 
 The key to solving this has been the following two items:
 1.- Divide the drawing ascci by lines and each line will correspond to an element of a list. So that when drawing both hands, the lines are drawn by concatenating them. Also for the right hand (selection of the machine) when printing, the chains are inverted and the '(' is changed by ')' to give the sensation of turning the hand downwards.
 2.- The second self-imposed challenge has been to solve the game of rock, paper, scissors in a numerical way, taking into account the following example:
 
 ```mermaid
-graph TD;
-    Rock --> Scissors;
-    Scissors --> Paper;
-    Paper --> Rock;
+flowchart LR;
+    0-Rock --> 2-Scissors;
+    2-Scissors --> 1-Paper;
+    1-Paper --> 0-Rock;
 ```
 
 ## Usage
