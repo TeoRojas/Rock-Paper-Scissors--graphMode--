@@ -82,16 +82,12 @@ def print_blank_line(*args):
 
 def print_who_wins(player, machine):
     print_blank_line('═')
-    if player == machine:
+    if player - machine == 0:
         print("»" + "It's a TIE!!!!!".center(51) + "«")
-    elif player - machine == -1:
+    elif player - machine == -1 or player - machine == 2:
         print("»" + "YOU LOSE!!!!".center(51) + "«")
-    elif player - machine == 1:
-        print("»" + "YOU WIN!!!".center(51) + "«")
-    elif player - machine == 2:
-        print("»" + "YOU LOSE!!!".center(51) + "«")        
-    else:
-        print("»" + "YOU WIN!!!".center(51) + "«")
+    elif player - machine == 1 or player - machine == -2:
+        print("»" + "YOU WIN!!!".center(51) + "«")    
     print_blank_line('═')
 
 if __name__ == "__main__":
