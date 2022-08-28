@@ -73,10 +73,6 @@ elif player - machine == 1 or player - machine == -2:
 python3 rock-paper-scissors.py
 ```
 
-## Config
-
-You can change your death's age in line 10, in 'years-to-live=70' change 70 to the age at which you would prefer to die.
-
 ## Credits
 The ascii drawings in the left-right direction are taken from:
 https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe
