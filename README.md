@@ -14,7 +14,7 @@ The key to solving this has been the following two items:
 
 ```mermaid
 graph LR;
-    Rock --> Scissors;
+    Rock<sub><sup>0</sup></sub> --> Scissors;
     Scissors --> Paper;
     Paper --> Rock;
 ```
