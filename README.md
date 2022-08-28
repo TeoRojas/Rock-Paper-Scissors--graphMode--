@@ -13,10 +13,10 @@ The key to solving this has been the following two items:
 2.- The second self-imposed challenge has been to solve the game of rock, paper, scissors in a numerical way, taking into account the following example:
 
 ```mermaid
-graph LR;
-    Rock|0 --> Scissors|2;
-    Scissors|2 --> Paper|1;
-    Paper|1 --> Rock|0;
+graph TD;
+    Rock --> Scissors;
+    Scissors --> Paper;
+    Paper --> Rock;
 ```
 
 ## Usage
