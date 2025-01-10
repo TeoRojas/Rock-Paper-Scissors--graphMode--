@@ -6,11 +6,11 @@ To compete with the machine, you will have to enter your selection by keyboard, 
 
 ![Image text](https://github.com/TeoRojas/Rock-Paper-Scissors--graphMode--/blob/main/img/vs-hands.png)
 
-## Chalenges
+## Challenges
 
 The first challenge is to draw the hands facing each other with their corresponding selection (rock, paper, scissors), right on the same line, and to achieve an effect in which the hand on the left has the palm facing upwards, and the hand on the right has the palm facing downwards.
 
-The key to solving this has been divide the drawing ascci by lines and each line will correspond to an element of a list. So that when drawing both hands, the lines are drawn by concatenating them. Also for the right hand (selection of the machine) when printing, the chains are inverted and the ')' is changed by '(' to give the sensation of turning the hand downwards.
+The key to solving this was to divide the drawing ascci by lines and each line will correspond to an element of a list. So that when drawing both hands, the lines are drawn by concatenating them. Also for the right hand (selection of the machine) when printing, the strings are inverted and the ')' is changed by '(' to give the sensation of turning the hand downwards.
 
 ```python   
 for l in range(len(ROCK)):
@@ -19,7 +19,7 @@ for l in range(len(ROCK)):
     + right_hand[l][::-1].replace(')','(')).center(53))
 ```
 
-The second self-imposed challenge has been to solve the game of rock, paper, scissors in a numerical way, taking into account the following example:
+The second self-imposed challenge has been to solve the game of rock, paper, scissors in a numerical way, considering the following example:
 
 ```mermaid
 flowchart LR;
@@ -74,5 +74,5 @@ python3 rock-paper-scissors.py
 ```
 
 ## Credits
-The ascii drawings in the left-right direction are taken from:
+The ASCII drawings in the left-right direction are taken from:
 https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe
